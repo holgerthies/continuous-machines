@@ -17,8 +17,10 @@ Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you 
 `opam install . --working-dir` to install all necessary libraries.
 
 ## The contents of the paper
-Formal proofs of statements in the paper have been made part of the incone library.
-The development concerning continuous machines is contained in the `computability` subfolder of the library.
+Formal proofs of statements in the paper have been made part of the library and are scattered across several files.
+The formal development of multifunctions and realizability are contained in the `mf` and `rlzrs` sublibraries.
+The remaining development is part of the `incone` library.
+The results concerning continuous machines are contained in the `computability` subfolder.
 
 
 ## Scopes and notations.
