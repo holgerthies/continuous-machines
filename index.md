@@ -12,8 +12,8 @@ The following libraries have to be installed in this order:
 You can just clone [this](https://github.com/holgerthies/continuous-machines) github repository using `git clone --recurse-submodules` to download all the libraries and then go into the respective folder and run
 `make && make install`.
 
-Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you can just run 
-`opam install . --working-dir`
+Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you can also run 
+`opam install . --working-dir` to install all necessary libraries.
 
 ## Scopes and notations.
 
