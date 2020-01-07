@@ -9,13 +9,10 @@ The following libraries have to be installed in this order:
 - [metric](https://github.com/FlorianSteinberg/metric/tree/v1.0)
 - [incone](https://github.com/FlorianSteinberg/incone/tree/v1.0)
 
-You can download each library from github using the above links (please use release version 1.0 for each library).
-To install each library simply go into the respective folder and run 
+You can just clone [this](https://github.com/holgerthies/continuous-machines) github repository using `git clone --recurse-submodules` to download all the libraries and then go into the respective folder and run
 `make && make install`.
 
-Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) to build Coq
-you need to clone [this](https://github.com/holgerthies/continuity) github repository (don't forget the --recurse-submodules as it contains submodules) and then do a
-
+Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you can just run 
 `opam install . --working-dir`
 
 ## Scopes and notations.
