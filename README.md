@@ -22,6 +22,7 @@ Basic definitions and results about multifunctions and realizability as outlined
 The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.0) main library.
 
 The results and examples of the paper can be roughly related to the formal results as follows:
+
 Most of Section 2 is contained in the continutiy folder of the incone library.
 In particular, Example 2.1 is contained in the file [continuity_spaces/discr.v](), the definition and properties of a modulus function is defined in the file [continuity_spaces/cont.v]() and the Kleeneans as defined in Example 2.3 are introduced in the file [continuity_spaces/hyperspaces.v]().
 The representation of the reals using rational approximations from Example 2.2 is contained in the file [examples/Q_reals.v]().
@@ -30,17 +31,3 @@ The results in Sections 3 and 4 concerning continuous and monotone machines are 
 The F operator from Section 3.2 is defined in [continuity/FMop.v]().
 The xtensive example in Section 3.3 (Inversion in the rational representation) is contained in the file [examples/reals/division_for_Q_reals.v]().
 Continuous machines (Section 4) are defined in [computabiliy/continuous_machines.v]() and the main results in this chapter are formalized in [computability/classical_mach.v]().
-
-
-## Scopes and notations.
-
-A general rule of the library is to use natural language to make the theorems as readable as possible.
-For concepts where the order of arguments is not clear in prefix notation there is usually an infix notation.
-To avoid blocking too many keywords by use of natural language in infix notation the words are connected by underscores and the first one is preceded by a backslash.
-The libraries provide scopes for toggling the notations:
-`mf_scope`, `baire_scope`, `met_scope` and `cs_scope`, where `mf` is for multi-function, `met` is for metric spaces and `cs` is for continuity spaces, that is represented spaces.
-Each scope is delimited by a `%` followed by the phrase before the underscore.
-Many of the notations in the different scopes overlap, for instance three of them have a notation `_ \is_continuous` and in some cases the notations are renamed with change of the scope:
-For instance the notation `_ \is_continuous` from `baire_scope` is renamed to `_ \is_continuous_operator` in the `cs_scope`.
-
-
