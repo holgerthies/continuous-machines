@@ -17,9 +17,10 @@ Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you 
 `opam install . --working-dir` to install all necessary libraries.
 
 ## The contents of the paper
-Formal proofs of statements in the paper have been made part of the library and are scattered across several files.
-The formal development of multifunctions and realizability are contained in the `mf` and `rlzrs` sublibraries.
-The remaining development is part of the `incone` library.
+Formal proofs of statements in the paper have been made part of the library and are scattered across several files and folders.
+Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.0)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.0) sublibraries, respectively.
+The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.0) main library.
+
 The results concerning continuous machines are contained in the `computability` subfolder.
 
 
