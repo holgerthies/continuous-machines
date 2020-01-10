@@ -5,10 +5,10 @@ The formal development has been made part of incone, a Coq library for computabl
 You should have coq (8.9.0) running with the [Coquelicot](http://coquelicot.saclay.inria.fr/) library (3.0) and from [math-comp](https://math-comp.github.io/math-comp/) (1.9.0) the packages ssreflect and algebra. 
 
 The following libraries have to be installed in this order:
-- [mf](https://github.com/FlorianSteinberg/mf/tree/v1.0) 
-- [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.0)
-- [metric](https://github.com/FlorianSteinberg/metric/tree/v1.0)
-- [incone](https://github.com/FlorianSteinberg/incone/tree/v1.0)
+- [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1) 
+- [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1)
+- [metric](https://github.com/FlorianSteinberg/metric/tree/v1.1)
+- [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1)
 
 You can just clone [this](https://github.com/holgerthies/continuous-machines) github repository using `git clone --recurse-submodules` to download all the libraries and then go into the respective folder and run
 `make && make install`.
@@ -18,8 +18,8 @@ Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you 
 
 ## The contents of the paper
 Formal proofs of statements in the paper have been made part of the library and are scattered across several files and folders.
-Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.0)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.0) sublibraries, respectively.
-The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.0) main library.
+Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1) sublibraries, respectively.
+The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1) main library.
 
 The results and examples of the paper can be roughly related to the formal results as follows:
 
