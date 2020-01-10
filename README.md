@@ -22,15 +22,19 @@ Formal proofs of statements in the paper have been made part of the library and 
 A good overview over how many of the main concepts from the paper are formalized can be ganed by looking at the example of representing real numbers using rational approximations (Example 2.2 in the paper) contained in [examples/Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/Q_reals.v) in the incone library.
 
 Further results and examples of the paper can be roughly related to the formalization as follows:
-- Represented spaces are called *continuity spaces* in incone.
-- Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1) sublibraries, respectively.
-The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1) main library.
-
-Most of Section 2 is contained in the continutiy folder of the incone library.
-In particular, Example 2.1 is contained in the file [continuity_spaces/discr.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/), the definition and properties of a modulus function is defined in the file [continuity_spaces/cont.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/cont.v) and the Kleeneans as defined in Example 2.3 are introduced in the file [continuity_spaces/hyperspaces.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/hyperspaces.v).
-The representation of the reals using rational approximations from Example 2.2 is contained in the file [examples/Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/Q_reals.v).
-
-The results in Sections 3 and 4 concerning continuous and monotone machines are mostly contained in the `computability` subfolder.
-The F operator from Section 3.2 is defined in [computability/FMop.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity/FMop.v).
-The extensive example in Section 3.3 (Inversion in the rational representation) is contained in the file [examples/reals/division_for_Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/reals/division_for_Q_reals.v).
-Continuous machines (Section 4) are defined in [computabiliy/continuous_machines.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computabiliy/continuous_machines.v) and the main results in this chapter are formalized in [computability/classical_mach.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computability/classical_mach.v).
+- Represented spaces as introduced in Section 2 are called *continuity spaces* in incone. Results on continuity spaces are contained in the `continuity_spaces` folder of the incone library. 
+  - The notion of representation and other basic definitions are contained in the file [continuity_spaces/representation.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/representation.v)
+  -  The representation for discrete spaces (Example 2.1) is contained in the file [continuity_spaces/discr.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/discr.v)
+  - Continuity is defined in  [continuity_spaces/cont.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/cont.v). 
+  - the Kleeneans as defined in Example 2.3 are introduced in the file [continuity_spaces/hyperspaces.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/hyperspaces.v) in the Section `Kleeneans`. This file also contains Example 2.4.
+  - The second part of Example 2.3 (the sign function) is defined in the beginning of the [examples/Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/Q_reals.v) file.
+  - Isomorphy (Section 2.2) is defined in  [continuity_spaces/iso.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/iso.v)
+- Statements and Definitions about multifunctions described in the first part of Section 3 are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1) sublibrary.
+- Realizability (Section 3.1) is contained in the [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1) sublibrary.
+- The definition of the modulus function from Section 4 can be found in  [continuity_spaces/cont.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/cont.v).
+- The results in Sections 3 and 4 concerning continuous and monotone machines are mostly contained in the `computability` subfolder of incone.
+  - The F operator from Section 3.2 is defined in [computability/FMop.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity/FMop.v).
+  - The extensive example in Section 3.3 (Inversion in the rational representation) is contained in the file [examples/reals/division_for_Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/reals/division_for_Q_reals.v).
+  - Continuous machines (Section 4) are defined in [computabiliy/continuous_machines.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computabiliy/continuous_machines.v)
+  - The main results in this chapter are formalized in [computability/classical_mach.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computability/classical_mach.v).
+  - Montone machines and their composition (Chapter 4.2) are treated in [computability/monotone_machines.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computability/monotone_machines.v).
