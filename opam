@@ -1,16 +1,17 @@
-opam-version: "1.2"
+opam-version: "2.0"
 name: "continuous-machines"
+synopsis: "The incone library"
+description: ""
 maintainer: "thies@inf.kyushu-u.ac.jp"
 homepage: "https://github.com/holgerthies/continuous-machines"
 bug-reports: "https://github.com/holgerthies/continuous-machines"
 dev-repo: "git+https://github.co/holgerthies/continuous-machines"
-license: "CeCILL-B"
 authors: ["Holger Thies"]
 build: [
   [make "-j%{jobs}%"]
 ]
 install: [
-  [make "install"]
+  [make]
 ]
 remove: [make "uninstall"]
 depends: [
