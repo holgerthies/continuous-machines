@@ -28,6 +28,6 @@ In particular, Example 2.1 is contained in the file [continuity_spaces/discr.v](
 The representation of the reals using rational approximations from Example 2.2 is contained in the file [examples/Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/Q_reals.v).
 
 The results in Sections 3 and 4 concerning continuous and monotone machines are mostly contained in the `computability` subfolder.
-The F operator from Section 3.2 is defined in [continuity/FMop.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity/FMop.v).
+The F operator from Section 3.2 is defined in [computability/FMop.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity/FMop.v).
 The extensive example in Section 3.3 (Inversion in the rational representation) is contained in the file [examples/reals/division_for_Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/reals/division_for_Q_reals.v).
 Continuous machines (Section 4) are defined in [computabiliy/continuous_machines.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computabiliy/continuous_machines.v) and the main results in this chapter are formalized in [computability/classical_mach.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/computability/classical_mach.v).
