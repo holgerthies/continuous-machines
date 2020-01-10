@@ -1,0 +1,23 @@
+opam-version: "1.2"
+name: "continuous-machines"
+maintainer: "thies@inf.kyushu-u.ac.jp"
+homepage: "https://github.com/holgerthies/continuous-machines"
+bug-reports: "https://github.com/holgerthies/continuous-machines"
+dev-repo: "git+https://github.co/holgerthies/continuous-machines"
+license: "CeCILL-B"
+authors: ["Holger Thies"]
+build: [
+  [make "-j%{jobs}%"]
+]
+install: [
+  [make "install"]
+]
+remove: [make "uninstall"]
+depends: [
+  "coq" {(>= "8.9")}
+  "coq-mathcomp-ssreflect" { (>= "1.9") }
+  "coq-mathcomp-algebra" {>= "1.9"}
+  "coq-coquelicot" {(>= "3.0")}
+]
+tags: [
+]
