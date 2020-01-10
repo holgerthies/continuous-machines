@@ -18,10 +18,13 @@ Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you 
 
 ## The contents of the paper
 Formal proofs of statements in the paper have been made part of the library and are scattered across several files and folders.
-Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1) sublibraries, respectively.
-The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1) main library.
 
-The results and examples of the paper can be roughly related to the formal results as follows:
+A good overview over how many of the main concepts from the paper are formalized can be ganed by looking at the example of representing real numbers using rational approximations (Example 2.2 in the paper) contained in [examples/Q_reals.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/examples/Q_reals.v) in the incone library.
+
+Further results and examples of the paper can be roughly related to the formalization as follows:
+- Represented spaces are called *continuity spaces* in incone.
+- Basic definitions and results about multifunctions and realizability as outlined in Sections 2 and 3 of the paper are contained in the [mf](https://github.com/FlorianSteinberg/mf/tree/v1.1)  and [rlzrs](https://github.com/FlorianSteinberg/rlzrs/tree/v1.1) sublibraries, respectively.
+The remaining development is mostly part of the [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1) main library.
 
 Most of Section 2 is contained in the continutiy folder of the incone library.
 In particular, Example 2.1 is contained in the file [continuity_spaces/discr.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/), the definition and properties of a modulus function is defined in the file [continuity_spaces/cont.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/cont.v) and the Kleeneans as defined in Example 2.3 are introduced in the file [continuity_spaces/hyperspaces.v](https://github.com/FlorianSteinberg/incone/tree/v1.1/continuity_spaces/hyperspaces.v).
