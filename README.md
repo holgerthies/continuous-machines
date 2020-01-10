@@ -10,8 +10,7 @@ The following libraries have to be installed in this order:
 - [metric](https://github.com/FlorianSteinberg/metric/tree/v1.1)
 - [incone](https://github.com/FlorianSteinberg/incone/tree/v1.1)
 
-You can just clone [this](https://github.com/holgerthies/continuous-machines) github repository using `git clone --recurse-submodules` to download all the libraries and then go into the respective folder and run
-`make && make install`.
+You can just clone [this](https://github.com/holgerthies/continuous-machines) github repository using `git clone --recurse-submodules`, change into the top directory and run `make` to install all four libraries.
 
 Alternatively if you are using [opam](https://coq.inria.fr/opam-using.html) you can also run 
 `opam install . --working-dir` to install all necessary libraries.
